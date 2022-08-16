@@ -1,0 +1,36 @@
+{
+  "name": "7seasnft-ts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run image2json && ts-node ./src/main.ts && ts-node ./src/classify.ts",
+    "classify": "ts-node ./src/classify.ts",
+    "update": "ts-node ./src/updateUnknown.ts",
+    "updateDiffs": "ts-node ./src/updateDiffs.ts",
+    "image2json": "ts-node ./src/images/sourcesToJson.ts",
+    "removeUnkonwnCaches": "ts-node ./src/removeUnkonwnCaches.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/crawler": "^1.2.2",
+    "@types/json2csv": "^5.0.3",
+    "@types/node": "^18.7.1",
+    "@types/qs": "^6.9.7",
+    "@types/resemblejs": "^4.1.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "canvas": "^2.9.3",
+    "crawler": "^1.3.0",
+    "fs": "^0.0.1-security",
+    "log4js": "^6.6.1",
+    "mongodb": "^4.8.1",
+    "node-xlsx": "^0.21.0",
+    "qs": "^6.5.3",
+    "resemblejs": "^4.1.0"
+  }
+}
