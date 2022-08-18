@@ -12,8 +12,7 @@ async function main() {
 
   logger.info(`Start crawler`)
 
-  // const total = await getActiveTotal(crawler)
-  const total = 1110
+  const total = await getActiveTotal(crawler)
   try {
     const auctions = await getActiveAuctions(crawler, total)
     const filteredAuctions = auctions.filter((item) => {
